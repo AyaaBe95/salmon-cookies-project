@@ -13,10 +13,11 @@ function getRandomInt(min, max) {
 function calcCustAvg() {
 
     for (let index = 0; index < hours.length; index++) {
-
+    
         var avg = Math.floor(getRandomInt(this.minHourlyCust, this.maxHourlyCust) * this.avgCookieCust);
         var total = total + avg
         this.result.push(avg)
+
 
     }
 }
@@ -55,18 +56,38 @@ function calcCustAvg() {
         tableRow.appendChild(tablehead);
     }
 
- // DOM body                                                                                                                                                                               
-var cities = [seattle, tokyo, dubai, paris, lima];
+ // DOM body  
+                                                                                                                                                                              
+var locations = [seattle, tokyo, dubai, paris, lima];
 
 Shop.prototype.render = function () {
     var tableRow = document.createElement('tr');
     table.appendChild(tableRow);
-    var tableData = document.createElement('td');
-    tableData.textContent = this.name;
-    tableRow.appendChild(tableData);
 
-   
-   
+    var tableContent = document.createElement('td');
+    tableContent.textContent = this.name;
+    tableRow.appendChild(tableContent);
+
+    for (let index = 0; index < locations.length; index++) {
+        var tableContent = document.createElement('td');
+        tableContent.textContent=this.result[i]
+        tableContent.appendChild(td)
+
+        
+    }
+
+}
+
+// DOM Footer
+Shop.prototype.renderfooter = function () {
+    var tableRow = document.createElement('tr');
+    table.appendChild(tableRow);
+
+
+
+
+
+
 }
 
     
