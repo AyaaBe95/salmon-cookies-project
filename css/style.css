@@ -3,10 +3,6 @@ body{
 }
 
 
-
-
-
-
 .center {
     display: block;
     margin-left: auto;
@@ -20,25 +16,11 @@ body{
     
     }
 
-nav li {
-        float : left;
-        height : 20px;
-        background-color :rgb(167, 241, 179);
-        margin-right : 200px;
-        padding-left: 5px;
-        text-align: center;
-      }
 
-main ul {
-        width: 200px;
-        overflow: hidden;
-        padding: 0;
-        margin: auto;
-      }
 
-ul {
-        list-style: none;
-      }
+
+
+
 
 #info {
 
@@ -47,10 +29,6 @@ ul {
         float: inline-start;
         padding-top: 20px;
       }
-td, th {
-        border: 1px solid #492f2f;
-        text-align: left;
-        padding: 8px;
-      }
+
       
       
