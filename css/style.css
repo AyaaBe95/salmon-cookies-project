@@ -1,56 +1,83 @@
 body{
-    background-color: rgb(17, 236, 17);
+  background-color: rgb(90, 236, 90);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.display-head {
+      display:inline;
+  
+  
+  }
+
+nav li {
+      
+      height : 20px;
+      background-color :rgb(167, 241, 179);
+      margin-right : 150px;
+      margin-left: 70px;
+      padding-left: 5px;
+      text-align: center;
+    }
+
+
+
+
+     td, th {
+
+      border: 1px solid #f7c4c4;
+      text-align: left;
+      padding: 5px;
+    }
+
+    .section1{
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .h3style{
+      border: steelblue solid;
+      width: 500px;
+      margin: auto;
+      float: inline-start;
+      background-color: rgb(83, 83, 80);
+      font-family: "Lucida Console", "Courier New", monospace;
+      color: rgb(245, 233, 231);
+      
+    }
+
+
+ol.b{
+  list-style-type: circle;
+  
+
+
+
 }
 
 
+    .storesInfo{
+  
+      float: left;
+      
+      
+      
 
-
-
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-.display-head {
-        display:inline;
-    
-    
     }
 
-nav li {
-        float : left;
-        height : 20px;
-        background-color :rgb(167, 241, 179);
-        margin-right : 200px;
-        padding-left: 5px;
-        text-align: center;
-      }
-
-main ul {
-        width: 200px;
-        overflow: hidden;
-        padding: 0;
-        margin: auto;
-      }
-
-ul {
-        list-style: none;
-      }
-
-#info {
-
-        width: 500px;
-        margin: auto;
-        float: inline-start;
-        padding-top: 20px;
-      }
-td, th {
-        border: 1px solid #492f2f;
-        text-align: left;
-        padding: 8px;
-      }
+    .detalis{
+  font-family: Arial, Helvetica, sans-serif;
+      padding: 0px;
       
-      
+
+    }
+    
+  
