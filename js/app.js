@@ -1,6 +1,6 @@
 'use strict'
 
-var hours = ['6:00 am', '7:00 am', '8:00 am', '9:00 am', '10:00 am', '11:00 am', '12:00 am', '1:00 pm', '2:00 pm', '3:00 pm', '4:00 pm', '5:00 pm', '6:00 pm', '7:00 pm'];
+var hours = ['Name','6:00 am', '7:00 am', '8:00 am', '9:00 am', '10:00 am', '11:00 am', '12:00 am', '1:00 pm', '2:00 pm', '3:00 pm', '4:00 pm', '5:00 pm', '6:00 pm', '7:00 pm'];
 
 
 function getRandomInt(min, max) {
@@ -19,12 +19,15 @@ function getRandomInt(min, max) {
         this.maxHourlyCust = maxHourlyCust;
         this.avgCookieCust = avgCookieCust;
         this.result = [];
-        this.total = 0;
+        
+        
 
     }
 
     Shop.prototype.calcCustAvg = function () {
+        var total = [];
 
+        
         for (let index = 0; index < hours.length; index++) {
         
             var avg = Math.floor(getRandomInt(this.minHourlyCust, this.maxHourlyCust) * this.avgCookieCust);
@@ -62,15 +65,17 @@ function getRandomInt(min, max) {
     table.appendChild(tableRow);
 
     for (let index = 0; index < hours.length; index++) {
-        var tablehead = document.createElement('th');
-        tablehead.textContent = hours[index];
-        tableRow.appendChild(tablehead);
+        var header = document.createElement('th');
+        header.textContent = hours[index];
+        tableRow.appendChild(header);
     }
 
  // DOM body  
-                                                                                                                                                                              
-var locations = [seattle, tokyo, dubai, paris, lima];
 
+ 
+ 
+
+                                                                                                                                                                              
 Shop.prototype.render = function () {
     var tableRow = document.createElement('tr');
     table.appendChild(tableRow);
@@ -80,15 +85,23 @@ Shop.prototype.render = function () {
     tableContent.textContent = this.name;
     tableRow.appendChild(tableContent);
 
-    for (let index = 0; index < hours.length; index++) {
+    
+
+    for (let index = 0; index < hours.length - 1 ; index++) {
         var td = document.createElement('td');
         
         td.textContent=this.result[index]
         tableRow.appendChild(td)
-
-        
     }
+    
+  
 
+
+
+    
+
+
+  
 }
 
 seattle.render();
@@ -103,15 +116,40 @@ lima.render();
 
 
 // DOM Footer
-Shop.prototype.renderfooter = function () {
+
+var locations = [seattle, tokyo, dubai, paris, lima];
+
+function makeFooterRow() { 
     var tableRow = document.createElement('tr');
+    tableRow.textContent = 'Totals';
     table.appendChild(tableRow);
+    var totalperHour = 0;
+    for (var i = 0; i < hours.length -1; i++) {
+      var hourlyTotal = 0;
+      for (var j = 0; j < locations.length; j++) {
+        hourlyTotal = hourlyTotal + locations[j].result[i];
+        totalperHour += locations[j].result[i];
+      }
+      var td = document.createElement('td');
+      td.textContent = hourlyTotal;
+      tableRow.appendChild(td);
+    }
+    td = document.createElement('td');
+    td.textContent = totalperHour;
+    tableRow.appendChild(td);
+  }
+
+  makeFooterRow()
 
 
 
 
 
 
-}
+
+
+
+
+
 
     
