@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <link rel="stylesheet" href="css/style.css">
     <title>Sales</title>
 </head>
@@ -12,29 +12,50 @@
         <div class="container">
             <div>
                 <div id="Cookie-logo">
-                    <img src="./img/salmon.png" alt="logo of Salmon" width="700" height="250" class="center">
+                    <img src="https://pngimg.com/uploads/welcome/welcome_PNG42.png" alt="logo of Salmon" width="700" height="250" class="center">
                 </div>
             </div>
             <nav>
                 <ul>
 
                     <li class="display-head"><a href="index.html">Home Page</a></li>
-                    
+
                     <li class="display-head"><a href="#">About Us</a></li>
-                    
+
                     <li class="display-head"><a href="#">Contact Us</a></li>
-                    
+
                     <li class="display-head"><a href="sales.html">Sales</a></li>
-        
-                    </ul>
+
+                </ul>
             </nav>
         </div>
     </header>
     <main>
+
+        <form id="forms">
+            <fieldset>
+
+                <label for="location">Location Name</label>
+                <input name="location" type="text">
+
+                <label for="minCustomer">Min Customer Per-hour</label>
+                <input name="minCustomer" type="number">
+
+                <label for="maxCustomer">Max Customer Per-hour</label>
+                <input name="maxCustomer" type="number">
+
+                <label for="avgCookies">Avg Cookies Per-sale</label>
+                <input name="avgCookies" type="number">
+
+                <input type="submit">
+            </fieldset>
+        </form>
         <div id="salesList">
 
 
         </div>
+
+
     </main>
 
     <footer>
