@@ -32,6 +32,12 @@ nav li {
       border: 3px solid rgb(19, 1, 1);
       text-align: left;
       padding: 5px;
+      font-family: Times;
+      background-color: rgb(209, 211, 175);
+
+    }
+    td{
+      font-family: Helvetica;
     }
 
     .section1{
@@ -43,13 +49,15 @@ nav li {
     }
 
     .h3style{
-      border: steelblue solid;
-      width: 500px;
+      border: solid rgb(12, 12, 12)olid;
+      width: 400px;
       margin: auto;
+      height: 30px;
       float: inline-start;
-      background-color: rgb(83, 83, 80);
-      font-family: "Lucida Console", "Courier New", monospace;
+      background-color:rgb(12, 12, 11);
+      font-family: "Lucida Console";
       color: rgb(245, 233, 231);
+      padding-top: 10px;
       
     }
 
@@ -72,3 +80,17 @@ ol.b{
       background-position: center;
       font-size: large;
     }
+
+  ul{
+    display: inline;
+  }
+
+   fieldset{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: burlywood;
+  }
+  #forms{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
