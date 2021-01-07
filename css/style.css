@@ -11,6 +11,8 @@ body{
 
 .display-head {
       display:inline;
+      background-color: rgb(252, 253, 242);
+      
   
   
   }
@@ -64,21 +66,31 @@ nav li {
 
 ol.b{
   list-style-type: circle;
+  width: auto;
+  height: auto;
+  width: fit-content;
+  
+
   
   
 }
     .storesInfo{
   
       float: left;
-    
+      height: 400px; 
+      width: fit-content;
+      padding-left: 10px;  
+
     }
 
     .detalis{
-  font-family: Arial, Helvetica, sans-serif;
-      padding: 0px;
-      color: cornflowerblue;
+  font-family: Helvetica;
+      
+      color: rgb(88, 67, 6);
       background-position: center;
       font-size: large;
+      height: 50px;
+      background-image:  url("https://addons-media.operacdn.com/media/CACHE/images/themes/25/37025/1.0-rev1/images/3b245e8f-9b75-434f-92e8-a10de1d5ef0e/1185b4f35a9a79f6f4d4ed01dfd8cd09.jpg");
     }
 
   ul{
@@ -94,3 +106,18 @@ ol.b{
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  .startStyle{
+    padding-left: 50px;
+  }
+
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-align: centerr;
+  }
+
+ 
