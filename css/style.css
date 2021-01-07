@@ -1,5 +1,6 @@
 body{
   background-color: hsla(89, 43%, 51%, 0.3)
+  
 }
 
 .center {
@@ -13,8 +14,7 @@ body{
       display:inline;
       background-color: rgb(252, 253, 242);
       
-  
-  
+      
   }
 
 nav li {
@@ -84,12 +84,13 @@ ol.b{
     }
 
     .detalis{
-  font-family: Helvetica;
-      
+      font-family: Helvetica;
       color: rgb(88, 67, 6);
       background-position: center;
       font-size: large;
       height: 50px;
+      padding-top: 10px;
+
       background-image:  url("https://addons-media.operacdn.com/media/CACHE/images/themes/25/37025/1.0-rev1/images/3b245e8f-9b75-434f-92e8-a10de1d5ef0e/1185b4f35a9a79f6f4d4ed01dfd8cd09.jpg");
     }
 
@@ -116,8 +117,37 @@ ol.b{
     bottom: 0;
     width: 100%;
     height: 50px;
-    color: white;
-    text-align: centerr;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    background-color: burlywood;
   }
+
+  .icons{
+    float: left;
+    display: inline;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    
+}
+.photo{
+  display: inline;
+  
+}
+
+#centre{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-left: 335px;
+  padding-top: 5px;
+  
+}
+
+p{
+  font-family: Helvetica;
+
+}
+
 
  
