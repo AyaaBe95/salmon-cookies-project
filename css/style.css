@@ -1,7 +1,13 @@
 body{
+  
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+  height: 100%;
   background-color: hsla(89, 43%, 51%, 0.3)
   
 }
+
 
 .center {
   display: block;
@@ -65,10 +71,11 @@ nav li {
 
 
 ol.b{
-  list-style-type: circle;
   width: auto;
   height: auto;
   width: fit-content;
+  padding-left: 40%;
+  padding-bottom: 30px;
   
 
   
@@ -90,7 +97,6 @@ ol.b{
       font-size: large;
       height: 50px;
       padding-top: 10px;
-
       background-image:  url("https://addons-media.operacdn.com/media/CACHE/images/themes/25/37025/1.0-rev1/images/3b245e8f-9b75-434f-92e8-a10de1d5ef0e/1185b4f35a9a79f6f4d4ed01dfd8cd09.jpg");
     }
 
@@ -150,11 +156,18 @@ p{
 }
 .severalPhotos{
   display: inline;
-  margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
   width: 100%;
   text-align: center;
+  padding-top: 30px;
+}
+.orders{
+  display: inline;
+  width: auto;
+  padding-left: 145px;
+  
+  
 }
 
 
