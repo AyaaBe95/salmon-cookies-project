@@ -148,6 +148,14 @@ p{
   font-family: Helvetica;
 
 }
+.severalPhotos{
+  display: inline;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
 
 
  
